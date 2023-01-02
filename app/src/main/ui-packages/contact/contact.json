@@ -1,0 +1,126 @@
+{
+  "name": "contact",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "oe8V5EYlNlAtFB4HU5lQj6",
+    "node": "1:14",
+    "version": "2816880525",
+    "component-id": "96927515fea89bd671cdfcf4991822f959336d77"
+  },
+  "default": "Contact",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "Icon"
+      },
+      {
+        "type": "text",
+        "id": "Title"
+      }
+    ],
+    "modes": {
+      "Contact": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "14.0",
+              "top": "8.0",
+              "right": "14.0",
+              "bottom": "8.0"
+            },
+            "border-radius": "20.0",
+            "tap-handler": "$onClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Icon",
+              "Title"
+            ],
+            "item-spacing": "8.0",
+            "background-color": {
+              "alpha": "0.14901960784313725",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Icon",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "vector-content": "icon.svg"
+          },
+          {
+            "id": "Title",
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$Title",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "40.0",
+            "line-height": "1.2102272033691406",
+            "typeface": "Inter"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": "Event of click"
+    },
+    "Title": {
+      "data-type": "text",
+      "required": false,
+      "description": "Title of contact"
+    }
+  },
+  "previews": [
+    {
+      "design": "Contact",
+      "size": {
+        "width": 375.0,
+        "height": 76.0
+      },
+      "parameters": {
+        "Title": "Tiago Danin"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
